@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        width: 60px;
+        height: 170px;
+        border: 1px solid rgba(156, 155, 155, 0.6);
+        border-radius: 8%;
+        background: linear-gradient(180deg, #fff 10%, rgb(214, 214, 214) 50%, rgb(201, 200, 200) 60%, rgba(202, 200, 200, 0.6) 70%, #fff 100%);
+        position: absolute;
+        top: 50%;
+        left: 10%;
+      }
+      .box1::after {
+        content: "";
+        width: 82px;
+        height: 120px;
+        background: linear-gradient(180deg, #fff 10%, rgb(214, 214, 214) 55%, rgb(201, 200, 200) 65%, rgba(202, 200, 200, 0.6) 75%, #fff 100%);
+        border: 1px solid rgba(156, 155, 155, 0.6);
+        position: absolute;
+        bottom: 25px;
+        left: 60px;
+        z-index: -1;
+      }
+      .box1::before {
+        content: "";
+        width: 324px;
+        height: 175px;
+        border: 1px solid rgba(156, 155, 155, 0.6);
+        background: linear-gradient(180deg, #fff 10%, rgb(214, 214, 214) 50%, rgb(201, 200, 200) 60%, rgba(202, 200, 200, 0.6) 70%, #fff 100%);
+        position: absolute;
+        bottom: 0;
+        left: 142px;
+      }
+      .text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(201, 200, 200);
+        position: absolute;
+        bottom: 0;
+        left: 142px;
+        width: 200px;
+      }
+      .box2 {
+        width: 60px;
+        height: 170px;
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        top: 0;
+        left: 0;
+      }
+      .box2::before {
+        content: "";
+        width: 60px;
+        height: 175px;
+        background: #000;
+        position: absolute;
+        bottom: 0;
+        left: 468px;
+      }
+      .box2::after {
+        content: "";
+        width: 324px;
+        height: 175px;
+        border: 1px solid rgba(156, 155, 155, 0.6);
+        background: linear-gradient(180deg, #fff 10%, rgb(214, 214, 214) 50%, rgb(201, 200, 200) 60%, rgba(202, 200, 200, 0.6) 70%, #fff 100%);
+        position: absolute;
+        bottom: 0;
+        left: 528px;
+      }
+      .sen {
+        width: 1.5px;
+        height: 28px;
+        background-color: rgb(201, 200, 200);
+        position: absolute;
+        top: -6px;
+        left: 439px;
+      }
+
+      .sen2 {
+        width: 1.5px;
+        height: 28px;
+        background-color: rgb(201, 200, 200);
+        position: absolute;
+      }
+      .sen:nth-child(1) {
+        top: -6px;
+        left: 163px;
+      }
+      .sen:nth-child(2) {
+        top: -6px;
+        left: 186px;
+      }
+      .sen:nth-child(3) {
+        top: -6px;
+        left: 209px;
+      }
+      .sen:nth-child(4) {
+        top: -6px;
+        left: 232px;
+      }
+      .sen:nth-child(5) {
+        top: -6px;
+        left: 232px;
+      }
+      .sen:nth-child(6) {
+        top: -6px;
+        left: 255px;
+      }
+      .sen:nth-child(7) {
+        top: -6px;
+        left: 278px;
+      }
+      .sen:nth-child(8) {
+        top: -6px;
+        left: 301px;
+      }
+      .sen:nth-child(8) {
+        top: -6px;
+        left: 301px;
+      }
+      .sen:nth-child(9) {
+        top: -6px;
+        left: 324px;
+      }
+      .sen:nth-child(10) {
+        top: -6px;
+        left: 347px;
+      }
+      .sen:nth-child(11) {
+        top: -6px;
+        left: 370px;
+      }
+      .sen:nth-child(12) {
+        top: -6px;
+        left: 393px;
+      }
+      .sen:nth-child(13) {
+        top: -6px;
+        left: 416px;
+      }
+
+      .sen2:nth-child(1) {
+        top: -6px;
+        left: 828px;
+        z-index: 2;
+      }
+      .sen2:nth-child(2) {
+        top: -6px;
+        left: 549px;
+        z-index: 2;
+      }
+      .sen2:nth-child(3) {
+        top: -6px;
+        left: 575px;
+        z-index: 2;
+      }
+      .sen2:nth-child(4) {
+        top: -6px;
+        left: 598px;
+        z-index: 2;
+      }
+      .sen2:nth-child(5) {
+        top: -6px;
+        left: 621px;
+        z-index: 2;
+      }
+      .sen2:nth-child(6) {
+        top: -6px;
+        left: 644px;
+        z-index: 2;
+      }
+      .sen2:nth-child(7) {
+        top: -6px;
+        left: 667px;
+        z-index: 2;
+      }
+      .sen2:nth-child(8) {
+        top: -6px;
+        left: 690px;
+        z-index: 2;
+      }
+      .sen2:nth-child(9) {
+        top: -6px;
+        left: 713px;
+        z-index: 2;
+      }
+      .sen2:nth-child(10) {
+        top: -6px;
+        left: 736px;
+        z-index: 2;
+      }
+      .sen2:nth-child(11) {
+        top: -6px;
+        left: 759px;
+        z-index: 2;
+      }
+      .sen2:nth-child(12) {
+        top: -6px;
+        left: 782px;
+        z-index: 2;
+      }
+      .sen2:nth-child(13) {
+        top: -6px;
+        left: 805px;
+        z-index: 2;
+      }
+      .box3 {
+        width: 324px;
+        height: 175px;
+        background: rgba(255, 255, 0, 0.3);
+        position: absolute;
+        bottom: 1px;
+        left: 528px;
+      }
+      .box4 {
+        width: 87px;
+        height: 120px;
+        background: linear-gradient(180deg, #fff 10%, rgb(214, 214, 214) 55%, rgb(201, 200, 200) 65%, rgba(202, 200, 200, 0.6) 75%, #fff 100%);
+        border: 1px solid rgba(156, 155, 155, 0.6);
+        border-radius: 6px;
+        position: absolute;
+        bottom: 25px;
+        left: 851px;
+        z-index: -1;
+      }
+      .box5 {
+        width: 180px;
+        height: 1.5px;
+        background-color: #000;
+        position: absolute;
+        bottom: 85px;
+        left: 938px;
+        z-index: -2;
+        box-shadow: 0 2px 2px 0 gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+      <div class="sen"></div>
+
+      <div class="box2">
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+        <div class="sen2"></div>
+      </div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+
+      <div class="text">MADE IN TAIWAN</div>
+    </div>
+  </body>
+</html>
